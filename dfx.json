@@ -1,7 +1,7 @@
 {
   "canisters": {
     "example_backend": {
-      "main": "src/example_backend/main.mo",
+      "main": "",
       "type": "motoko"
     },
     "example_frontend": {
