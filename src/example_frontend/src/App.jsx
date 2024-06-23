@@ -159,11 +159,11 @@ function App() {
   return (
     <main>
         <img src="/logo2.svg" alt="DFINITY logo" />
-      <h1>Students and Courses Management (Example)</h1>
+      <h1>Learning Unit Assessment 4</h1>
       {isLoggedIn ? (
         <>
           <p>Welcome back, {principal ? principal.toString() : "User"}!</p>
-          <button onClick={signOut}>Sign Out</button>
+          <button onClick={signOut}>Log Out</button>
           <button onClick={() => setShowAddStudentForm(true)}>Add New Student</button>
           <button onClick={() => setShowAddCourseForm(true)}>Add New Course</button>
           <button onClick={fetchStudents}>Fetch Students</button>
@@ -274,7 +274,7 @@ function App() {
           )}
         </>
       ) : (
-        <button onClick={signIn}>Sign In</button>
+        <button onClick={signIn}>LogIn</button>
       )}
     </main>
   );
