@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import environment from 'vite-plugin-environment';
 import dotenv from 'dotenv';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 dotenv.config({ path: '../../.env' });
 
